@@ -11,6 +11,9 @@ import framer from './tech/framer.png';
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import gearXpert from './gearXpert.png';
+import pro4 from './pro4.png';
+import pro5 from './pro5.png';
+import team2 from './team2.png';
 import project3 from './project3.webp';
 import project2 from './proj1.webp'
 import mysql from './tech/mysql.png';
@@ -46,6 +49,9 @@ export {
   gearXpert,
   project2,
   project3,
+  pro4,
+  pro5,
+  team2,
   mysql,
   express,
   aws,

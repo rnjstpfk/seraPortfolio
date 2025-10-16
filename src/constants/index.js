@@ -12,6 +12,9 @@ import {
   gearXpert,
   project2,
   project3,
+  pro4,
+  pro5,
+  team2,
   mysql,
   express,
   aws,
@@ -215,7 +218,7 @@ const projects = [
   {
     name: "My Movie App",
     description:
-      "TMDB API로 인기/상영 중 영화 보여주는 앱",
+      "TMDB API를 활용해 실시간 개봉·인기 영화를 보여주는 앱입니다. Firebase 로그인 후 좋아요 표시 및 마이페이지에서 저장된 영화를 관리할 수 있습니다.",
     tags: [
       {
         name: "react",
@@ -236,9 +239,9 @@ const projects = [
     live_link: "https://movie-app-six-brown-53.vercel.app/"
   },
   {
-    name: "스타벅스",
+    name: "Starbucks Clone",
     description:
-      "스타벅스 공식 웹사이트를 HTML/CSS로 클론 코딩하며 웹 퍼블리싱을 연습한 프로젝트입니다.",
+      "HTML과 CSS로 스타벅스 공식 웹사이트를 클론 코딩했습니다. 시멘틱 구조와 반응형 레이아웃으로 퍼블리싱 감각을 강화했습니다.",
     tags: [
       {
         name: "html",
@@ -246,7 +249,7 @@ const projects = [
       },
       {
         name: "css",
-        color: "green-text-gradient",
+        color: "white-text-gradient",
       },
       /* {
         name: "Gsap",
@@ -260,7 +263,7 @@ const projects = [
   {
     name: "아뜨랑스",
     description:
-      "아뜨랑스 쇼핑몰 클론 프로젝트. React로 구조화된 페이지와 SCSS 기반의 스타일 구현 중심으로 제작.",
+      "React와 SCSS를 활용해 아뜨랑스 메인 페이지를 클론 코딩했습니다. 홈 화면 UI 중심으로 퍼블리싱 구조를 설계하고 스타일 모듈화를 적용했습니다.",
     tags: [
       {
         name: "react",
@@ -281,30 +284,72 @@ const projects = [
     live_link: "https://rnjstpfk.github.io/shop2/"
   },
   {
-    name: "GoGroove-Ecommerce",
+    name: "OK DRUGS",
     description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
+      "React와 Firebase를 활용한 쇼핑몰 클론 프로젝트입니다. 로그인, 게시글 작성, 댓글, 좋아요 기능을 Firebase로 연동했습니다. 반응형 디자인을 적용해 다양한 기기에서 원활하게 사용할 수 있습니다.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "express",
+        name: "scss",
         color: "white-text-gradient",
       },
       {
-        name: "node",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "firebase",
+        color: "pink-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://github.com/",
+    image: pro4,
+    source_code_link: "https://github.com/rnjstpfk/ok1",
+    live_link: "https://ok1-phi.vercel.app/"
   },
+  {
+    name: "ARCHIVE MUSEE",
+    description:
+      "여러 박물관의 작품을 탐색할 수 있는 팀 프로젝트입니다. 무료 API 부재로 자체 데이터셋을 제작·연동했으며, 로그인·검색·좋아요 기능을 구현했습니다.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "white-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pro5,
+    source_code_link: "https://github.com/rnjstpfk/team1",
+    live_link: "https://team1-2c9b9.web.app"
+  },
+  {
+    name: "ShopFrame",
+    description:
+      "사용자가 직접 쇼핑몰을 생성할 수 있는 웹 빌더 프로젝트입니다. 회원가입 후 로고·이미지·카테고리를 설정하면 자동으로 쇼핑몰이 완성됩니다.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "white-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: team2,
+    source_code_link: "https://github.com/rnjstpfk/team1",
+    live_link: "https://hotel-83914.web.app/"
+  },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

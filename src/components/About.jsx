@@ -68,13 +68,14 @@ const About = () => {
     <>
       <div ref={headingRef}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Me.</h2>
       </div>
 
       <p ref={paragraphRef} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I'm a skilled software developer with experience in  JavaScript, and expertise in frameworks 
-        like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, 
-        scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+        꾸준히 성장하며 사용자 중심의 인터페이스를 만드는 프론트엔드 개발자입니다.
+        구조적인 마크업과 반응형 디자인을 구현하고,
+        React와 Firebase로 기능적인 웹 애플리케이션을 제작하고 있습니다.
+        기술보다 중요한 건 “끝까지 완성하려는 끈기”라고 믿습니다.
       </p>
 
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">
