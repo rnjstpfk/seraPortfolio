@@ -47,7 +47,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("감사합니다. 가능한 한 빨리 연락드리겠습니다.");
 
           setForm({
             name: "",

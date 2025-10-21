@@ -108,7 +108,6 @@ const ProjectCard = ({
         </div>
       </div>
 
-      {/* 텍스트 영역 */}
       <div className="mt-5 flex-1 flex flex-col min-h-[140px]">
         <h3 className="text-white font-bold text-[20px] leading-tight">{name}</h3>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
@@ -129,7 +128,6 @@ const Works = () => {
   const prefersReduced = usePrefersReducedMotion();
   const containerRef = useRef(null);
 
-  // GSAP 스크롤 리빌(리스트 단위, 과하지 않게)
   useEffect(() => {
     if (prefersReduced) return;
 
@@ -166,8 +164,6 @@ const Works = () => {
 
       <div className="w-full flex">
         <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          A curated set of projects demonstrating problem-solving, technical range,
-          and product polish. Each card links to a live demo and source code.
         </p>
       </div>
 
