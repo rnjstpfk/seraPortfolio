@@ -29,7 +29,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import scss from "./tech/scss.png";
-import Firebase from "./tech/Firebase.png";
+import Firebase from "./tech/firebase.png";
 import threejs from "./tech/threejs.svg";
 import firstTestimonial from './Tars Ken.webp';
 import secondTestimonial from './image.webp';
@@ -72,6 +72,6 @@ export {
   tailwind,
   threejs,
   scss,
-  Firebase,
+  firebase,
 
 };
