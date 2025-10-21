@@ -20,7 +20,7 @@ import {
   aws,
   mui,
   scss,
-  Firebase,
+  firebase,
   
   gsap,
   framer,
