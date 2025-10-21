@@ -162,8 +162,8 @@ const technologies = [
     icon: scss,
   },
   {
-    name: "Firebase",
-    icon: Firebase,
+    name: "firebase",
+    icon: firebase,
   },
   
  
