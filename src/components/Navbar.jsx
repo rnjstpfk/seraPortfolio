@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo } from "../assets"; // menu/close 아이콘 불필요
+import { logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuRef = useRef(null); //메뉴 박스 참조용
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +19,17 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  //외부 클릭 시 메뉴 닫힘
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+    if (toggle) document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [toggle]);
 
   return (
     <nav
@@ -47,7 +59,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-[#A1C4FD] transition-colors duration-200 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -56,8 +68,7 @@ const Navbar = () => {
         </ul>
 
         {/* 모바일 메뉴 토글 */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          {/*이미지 대신 CSS 햄버거 */}
+        <div className="sm:hidden flex flex-1 justify-end items-center" ref={menuRef}>
           <button
             aria-label="menu"
             aria-expanded={toggle}
@@ -91,11 +102,11 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`font-poppins font-medium cursor-pointer text-[16px] transition-colors duration-200 ${
                     active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                  } hover:text-[#A1C4FD]`}
                   onClick={() => {
-                    setToggle(false); 
+                    setToggle(false);
                     setActive(nav.title);
                   }}
                 >
