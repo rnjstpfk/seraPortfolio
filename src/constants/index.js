@@ -322,6 +322,10 @@ const projects = [
         name: "firebase",
         color: "pink-text-gradient",
       },
+      {
+        name: "team project",
+        color: "yellow-text-gradient",
+      },
     ],
     image: pro5,
     source_code_link: "https://github.com/rnjstpfk/team1",
@@ -343,6 +347,10 @@ const projects = [
       {
         name: "firebase",
         color: "pink-text-gradient",
+      },
+      {
+        name: "team project",
+        color: "yellow-text-gradient",
       },
     ],
     image: team2,
