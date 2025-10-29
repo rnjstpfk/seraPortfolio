@@ -354,7 +354,7 @@ const projects = [
       },
     ],
     image: team2,
-    source_code_link: "https://github.com/rnjstpfk/team1",
+    source_code_link: "https://github.com/rnjstpfk/ShopFrame",
     live_link: "https://hotel-83914.web.app/"
   },
   
